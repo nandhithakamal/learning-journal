@@ -26,6 +26,9 @@ goto just before a character 'a' to the right or forward of the cursor
 	- t + <char>; ta
 goto just before a character 'a' backwards or left to the cursor in the line
 	- T + <char>; Ta
+goto end of file
+	- :$
+	- G
 view relative line numbers
 	- set relativenumber
 	- set rnu
@@ -47,3 +50,4 @@ delete current line (saved in clipboard)
 	- dd
 yank (copy) current line
 	- yy
+
