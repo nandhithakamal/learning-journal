@@ -42,3 +42,7 @@ Haven't updatd this in a long time and there is so much to to add
 
 The kernel triggers events like uevents everytime something specific happens. This is the kernal's way bringing to the userspace something that happened in the kernal space. And one can listen to specfic uevents and trigger actions depending on the context of the uevent. A common example would be backing up a USB drive that gets connected to the machine. To listen and act on specific uevents, we can write somehting called udev rules. These rules are picked up by the udev daemon that runs as a systemd and acted upon. There's lot of resources on the net on how to write udev rules. [This](https://opensource.com/article/18/11/udev) one is my favourite so far. And I'm planning to write my own notes/learnings on this sometime soon to integrate the various aspects of building and testing with udev rules. 
 
+#### 2. golang build constraints
+
+It is possible to specify in golang whether a package or file should be or should not be compiled for a specific platform. This is accomplished using something called build constraints. A build constraint also known as a build tag that begins as ```// +build``` This lists the conditions under which the file should be included in the package. Multiple build tag lines should be followed by a blank line and must appear before the `package` clause. More info in the [official docs](https://golang.org/pkg/go/build/#hdr-Build_Constraints).
+
