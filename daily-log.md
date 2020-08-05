@@ -46,3 +46,11 @@ The kernel triggers events like uevents everytime something specific happens. Th
 
 It is possible to specify in golang whether a package or file should be or should not be compiled for a specific platform. This is accomplished using something called build constraints. A build constraint also known as a build tag that begins as ```// +build``` This lists the conditions under which the file should be included in the package. Multiple build tag lines should be followed by a blank line and must appear before the `package` clause. More info in the [official docs](https://golang.org/pkg/go/build/#hdr-Build_Constraints).
 
+
+### 05.08.2020
+
+This should be backdated but I'm not sure about the exact date. Anyway, it is important to capture this instead of getting caught in the nitty-grities of when this should've been captured. 
+
+#### 1. change uevents
+
+Change uevents are not notified on VMs. I was listening for battery `change` uevents using `udevadm monitor`. They are not sent on Virtual Machines apparently. I was using a guest Ubuntu machine.
