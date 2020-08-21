@@ -59,5 +59,5 @@ Change uevents are not notified on VMs. I was listening for battery `change` uev
 
 #### 1. modifying an older git commit
 
-Run the `git rebase -i HEAD~N` command. In the ensuing editor that opens, replace the word `pick` with `reword` for the commits that needs to be reworded/modified. Save and quit. For each commit that needs to be reworded, an editor will open with the old commit. Edit the commit message. Save and quit. Force push if necessary.
+Run the `git rebase -i HEAD~N` command. In the ensuing editor that opens, replace the word `pick` with `reword` for the commits that needs to be reworded/modified. Save and quit. For each commit that needs to be reworded, an editor will open with the old commit. Edit the commit message. Save and quit. Force push if necessary. [Reference](https://linuxize.com/post/change-git-commit-message/)
 
